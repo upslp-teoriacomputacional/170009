@@ -54,7 +54,7 @@ let union() =
 
 // Intersection
 let interseccion() = 
-    printf "The intersection = %A" (Set.intersect A B)
+    printfn "The intersection = %A" (Set.intersect A B)
 
 // Difference
 let diferencia() = 
