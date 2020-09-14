@@ -25,6 +25,32 @@ printfn "A set is: %A" A
 printfn "B set is: %A" B
 printfn "C set is: %A" C
 
+
+
+
+// Pertenencia
+let pertenencia() =
+    printfn "1 in A = %b" (A.Contains(1))
+    printfn "1 not in A = %b" (not (A.Contains(1)))
+    printfn "1 in A = %b" (A.Contains(10))
+    printfn "1 in A = %b" (not (A.Contains(10)))
+
+// Convertir a un conjunto
+let transformarConj() = 
+    let a = [1;2;3]
+    let conjuntoA = Set.ofList a
+    printfn "The set is: %A" conjuntoA
+    let b = [1;2;3]
+    let conjuntoB = Set.ofList b
+    printfn "The set is: %A" conjuntoB
+    let c = [1;2;3]
+    let conjuntoC = Set.ofList c
+    printfn "The set is: %A" conjuntoC
+
+
+
+
+
 // Remove an item from the set
 let quitar() = 
     A <- A.Remove 5
@@ -79,8 +105,7 @@ let superconjunto() =
     printfn "The superset = %b" (B.IsSupersetOf A)
 
 
-
-let main argv =
+let main =
     quitar()
     clearSet()
     copiar()

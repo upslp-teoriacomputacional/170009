@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\raula\\Documents\\170009\\conjuntos\\170009\\Conjuntos\\Conjuntos.fsproj": {}
+    "C:\\Users\\raula\\Documents\\TeoriaComputacional\\Fsharp-Github\\170009\\Conjuntos\\Conjuntos.fsproj": {}
   },
   "projects": {
-    "C:\\Users\\raula\\Documents\\170009\\conjuntos\\170009\\Conjuntos\\Conjuntos.fsproj": {
+    "C:\\Users\\raula\\Documents\\TeoriaComputacional\\Fsharp-Github\\170009\\Conjuntos\\Conjuntos.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\raula\\Documents\\170009\\conjuntos\\170009\\Conjuntos\\Conjuntos.fsproj",
+        "projectUniqueName": "C:\\Users\\raula\\Documents\\TeoriaComputacional\\Fsharp-Github\\170009\\Conjuntos\\Conjuntos.fsproj",
         "projectName": "Conjuntos",
-        "projectPath": "C:\\Users\\raula\\Documents\\170009\\conjuntos\\170009\\Conjuntos\\Conjuntos.fsproj",
+        "projectPath": "C:\\Users\\raula\\Documents\\TeoriaComputacional\\Fsharp-Github\\170009\\Conjuntos\\Conjuntos.fsproj",
         "packagesPath": "C:\\Users\\raula\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\raula\\Documents\\170009\\conjuntos\\170009\\Conjuntos\\obj\\",
+        "outputPath": "C:\\Users\\raula\\Documents\\TeoriaComputacional\\Fsharp-Github\\170009\\Conjuntos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\raula\\AppData\\Roaming\\NuGet\\NuGet.Config"

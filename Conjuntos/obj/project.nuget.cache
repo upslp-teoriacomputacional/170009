@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "griITGNfloSlvjlwWY8BEohSsXWiyTZYAkLzDw6ehWMpC5I9+FIJcFSVnJ1stuvE0CKBdi+ub9iDZhornHJriw==",
+  "dgSpecHash": "d7MWYg7G609Dz537kjziBhEwODCAuw5wdpXflXihAU2iozYsj/2kP/8BhOILuhyOuld6SkNVzeclQZevn9/HdA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\raula\\Documents\\170009\\conjuntos\\170009\\Conjuntos\\Conjuntos.fsproj",
+  "projectFilePath": "C:\\Users\\raula\\Documents\\TeoriaComputacional\\Fsharp-Github\\170009\\Conjuntos\\Conjuntos.fsproj",
   "expectedPackageFiles": [
     "C:\\Users\\raula\\.nuget\\packages\\fsharp.core\\4.7.2\\fsharp.core.4.7.2.nupkg.sha512"
   ],
