@@ -1,5 +1,15 @@
-// Learn more about F# at http://fsharp.org
-
+(*
+ *  Nombre:     Raul Andres Argott Castro
+ *  Matricula:  170009
+ *  Carrera:    ITI
+ *  Description:  Pasar el codigo de Conjuntos de python a F Sharp
+ *
+ *  Written:       11/09/2020
+ *  Last updated:  13/09/2020
+ *
+ *  % F#
+ *  % F# script
+*)
 open System
 
 
