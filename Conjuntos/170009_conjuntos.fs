@@ -1,4 +1,4 @@
-(*
+﻿(*
  *  Nombre:     Raul Andres Argott Castro
  *  Matricula:  170009
  *  Carrera:    ITI
@@ -78,4 +78,17 @@ let superconjunto() =
     printfn "The superset = %b" (A.IsSupersetOf B)
     printfn "The superset = %b" (B.IsSupersetOf A)
 
-Console.ReadKey() |> ignore
+
+
+let main argv =
+    quitar()
+    clearSet()
+    copiar()
+    agregar()
+    union()
+    interseccion()
+    diferencia()
+    simetrica()
+    subconjunto()
+    superconjunto()
+    0 // return an integer exit code
