@@ -1,5 +1,7 @@
 #Demostracion - Compuertas
+
 ##Descripción
+
 El programa realiza las tablas de verdad de dos variables de tipo booleano
 OR
 AND
@@ -7,6 +9,7 @@ NOT
 XOR
 
 ##Ejecucuón
+
 Para ejecutarlo hay dos opciones:
 1. Ejecutando el proyecto con run
     Para esto se debe ingresar en la consola dentro de la carpeta Conjuntos la siguiente luinea:
