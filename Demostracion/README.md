@@ -1,6 +1,6 @@
-#Demostracion - Compuertas
+# Demostracion - Compuertas
 
-##Descripción
+## Descripción
 
 El programa realiza las tablas de verdad de dos variables de tipo booleano
 OR
@@ -8,7 +8,7 @@ AND
 NOT
 XOR
 
-##Ejecucuón
+## Ejecucuón
 
 Para ejecutarlo hay dos opciones:
 1. Ejecutando el proyecto con run
