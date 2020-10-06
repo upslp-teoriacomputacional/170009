@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "q+EP69m22Nm7J+kL0dL+kL5NTkscsScV2r6gwDHEA7EUIut7PVxBsH8hia/04r0TL9f+k5lqsuUNCkVfBJB+gw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\raula\\Documents\\TeoriaComputacional\\Fsharp-Github\\170009\\afd\\afd.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\raula\\.nuget\\packages\\fsharp.core\\4.7.2\\fsharp.core.4.7.2.nupkg.sha512"
+  ],
+  "logs": []
+}
