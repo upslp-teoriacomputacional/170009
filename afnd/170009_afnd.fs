@@ -17,10 +17,9 @@ let mutable simbolo:string = null
 let mutable fin:string = null
 
 
-//L(r) = a*ba*(c+d)
+//L(r) = a*ba*
 //L(a*) = {ε,a,aa,aaa,aaaa,...}
 //L(b) = {b}
-//L(c+d) = {c,d}
 
 let caracter (character) : int = 
     simbolo <- ""
@@ -36,11 +35,8 @@ let caracter (character) : int =
     elif Regex.IsMatch(character, b) then
         simbolo <- "b"
         1
-    elif Regex.IsMatch(character, cMasD) then
-        simbolo <- "(c+d)"
-        2
     elif character.Equals(fin) then 
-        3
+        2
     else 
         printfn "Caracter no valido"
         4
@@ -56,10 +52,10 @@ let encabezado() =
     printfn "|\tEdo. Actual\t|\tCaracter\t|\tSimbolo   \t|\tEdo. Siguiente\t|"
     cuerpo()
     
-// estados 1,2
+// estados 0,1
 // error 5
 // aceptacion 4
-let tabla = [[0;1;5;5]; [1;2;2;5];[5;5;5;4]]
+let tabla = [[0;1;5]; [1;5;4]]
 
 let mutable estado = 0
 printfn """+-------------------------------------+
@@ -80,10 +76,10 @@ for character in cadena do
             printfn """|                                    Cadena No Valida
     +-----------------------+-----------------------+-----------------------+-----------------------+"""
         contenido(estadoSiguiente, character, simbolo, estado)
-if estado <> 2 then
+if estado <> 1 then
     printfn """|                                    Cadena No Valida
 +-----------------------+-----------------------+-----------------------+-----------------------+"""
-if estado = 2 && charcaracter < 4 then
+if estado = 1 && charcaracter < 4 then
     printfn "|\t    %i    \t|\t          \t|\tFin Cadena\t|\t   \t|" estado
     cuerpo()
     printfn """|                                    Cadena Valida

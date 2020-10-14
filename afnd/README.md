@@ -5,11 +5,10 @@
 Programa de F Sharp que simula un automata finito con entradas definidas por expresiones regulares.
 En este caso se implementará un automata no deterministico con la siguiente definicion:
 
-    L(r) = a*ba*(c+d)
+    L(r) = a*ba*
     L(a*) = {ε,a,aa,aaa,aaaa,...}
     L(b) = {b}
-    L(c+d) = {c,d}
-    L(r) = {bc,bd,abc,abd,bca,bda,abca,abda,aabca,...}
+    L(r) = {b,ab.ba,aba,aab,baa,...}
 
 ## Ejecucuón
 
