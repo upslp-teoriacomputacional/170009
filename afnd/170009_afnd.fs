@@ -2,7 +2,7 @@
  *  Nombre:     Raul Andres Argott Castro
  *  Matricula:  170009
  *  Carrera:    ITI
- *  Description:  Simular un atomata
+ *  Description:  Simular un atomata no deterministico con el lenguaje a*ba*b
  *
  *  Written:       5/10/2020
  *  Last updated:  6/10/2020
@@ -16,21 +16,31 @@ open System.Text.RegularExpressions
 let mutable simbolo:string = null
 let mutable fin:string = null
 
+
+//L(r) = a*ba*(c+d)
+//L(a*) = {ε,a,aa,aaa,aaaa,...}
+//L(b) = {b}
+//L(c+d) = {c,d}
+
 let caracter (character) : int = 
     simbolo <- ""
     fin <- ""
-    let mutable digito = "[0-9]"
-    let mutable operador = "(\+|\-|\*|\/)"
+    let mutable aAsterisco = "a"
+    let mutable b = "b"
+    let mutable cMasD = "c|d"
     let mutable x:char = 'e'
 
-    if Regex.IsMatch(character, digito) then
-        simbolo <- "Digito"
+    if Regex.IsMatch(character, aAsterisco) then
+        simbolo <- "a*"
         0
-    elif Regex.IsMatch(character, operador) then
-        simbolo <- "Operador"
+    elif Regex.IsMatch(character, b) then
+        simbolo <- "b"
         1
-    elif character.Equals(fin) then 
+    elif Regex.IsMatch(character, cMasD) then
+        simbolo <- "(c+d)"
         2
+    elif character.Equals(fin) then 
+        3
     else 
         printfn "Caracter no valido"
         4
@@ -39,17 +49,17 @@ let cuerpo() =
     printfn "+-----------------------+-----------------------+-----------------------+-----------------------+"
 
 let contenido (estadoSiguiente, character, simbolo,estado) = 
-    printfn "|\t    %i    \t|\t    %c    \t|\t%s  \t|\t %i\t|" estadoSiguiente character simbolo estado
+    printfn "|\t    %i    \t|\t    %c    \t|\t   %s    \t|\t %i\t|" estadoSiguiente character simbolo estado
     cuerpo()
 
 let encabezado() = 
     printfn "|\tEdo. Actual\t|\tCaracter\t|\tSimbolo   \t|\tEdo. Siguiente\t|"
     cuerpo()
     
-// estados 1,2,3
+// estados 1,2
 // error 5
 // aceptacion 4
-let tabla = [[1;5;5]; [1;2;5];[3;5;5];[3;2;4]]
+let tabla = [[0;1;5;5]; [1;2;2;5];[5;5;5;4]]
 
 let mutable estado = 0
 printfn """+-------------------------------------+
@@ -70,10 +80,10 @@ for character in cadena do
             printfn """|                                    Cadena No Valida
     +-----------------------+-----------------------+-----------------------+-----------------------+"""
         contenido(estadoSiguiente, character, simbolo, estado)
-if estado <> 3 then
+if estado <> 2 then
     printfn """|                                    Cadena No Valida
 +-----------------------+-----------------------+-----------------------+-----------------------+"""
-if estado = 3 && charcaracter < 4 then
+if estado = 2 && charcaracter < 4 then
     printfn "|\t    %i    \t|\t          \t|\tFin Cadena\t|\t   \t|" estado
     cuerpo()
     printfn """|                                    Cadena Valida
