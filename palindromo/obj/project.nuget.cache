@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GCDbtWJMOo4vvKY7qhwiwbkUhzUWZSfiD8BFxybh2cXELElgCscCmz0rT0IJ/dCrWj5hFdqK/FuwBtsB7kB7SA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\raula\\Documents\\TeoriaComputacional\\Fsharp-Github\\170009\\palindromo\\palindromo.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\raula\\.nuget\\packages\\fsharp.core\\4.7.2\\fsharp.core.4.7.2.nupkg.sha512"
+  ],
+  "logs": []
+}
